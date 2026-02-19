@@ -3,6 +3,7 @@
 <head>
     <title>Esha Kamran | Engineering Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -11,65 +12,180 @@
             color: white;
         }
 
+        /* TOP-RIGHT LINKEDIN + PHOTO */
+        .top-right {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .top-right a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #b0d5ff;
+            background: rgba(10, 10, 10, 0.8);
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid #2b3b4f;
+            font-size: 0.9rem;
+        }
+
+        .top-right a:hover {
+            background: rgba(30, 30, 30, 0.95);
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #2b3b4f;
+        }
+
+        /* HERO SECTION */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            padding: 0 20px;
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin: 0;
         }
 
-        p {
+        .subtitle {
             font-size: 1.2rem;
-            opacity: 0.7;
+            opacity: 0.8;
+            margin-top: 10px;
         }
 
+        /* PROJECT SECTION */
         .projects {
-            padding: 80px 20px;
+            padding: 80px 20px 60px 20px;
             text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        .projects p {
+            opacity: 0.75;
+            margin-top: 0;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 40px auto;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 40px auto 0 auto;
+        }
+
+        /* CLICKABLE CARDS */
+        .grid a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .card {
             background: #1a1a1a;
-            padding: 40px;
+            padding: 30px;
             border-radius: 14px;
-            transition: 0.3s;
+            transition: 0.25s;
+            font-size: 1.05rem;
+            text-align: left;
         }
 
         .card:hover {
-            transform: translateY(-8px);
-            background: #242424;
+            transform: translateY(-6px);
+            background: #232323;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .card-tagline {
+            opacity: 0.7;
+            font-size: 0.9rem;
         }
     </style>
 </head>
+
 <body>
 
-<div class="hero">
-    <h1>Esha Kamran</h1>
-    <p>Engineering Student • Projects • Research</p>
-</div>
-
-<div class="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-        <div class="card">Solar Pump System</div>
-        <div class="card">Wind Energy Startup Concept</div>
-        <div class="card">MATLAB Engineering Model</div>
+    <!-- TOP-RIGHT LINKEDIN + PHOTO -->
+    <div class="top-right">
+        <a href="https://linkedin.com/in/eshakamran" target="_blank" rel="noopener">
+            <!-- Replace profile.jpg with your actual photo file name if different -->
+            <img src="profile.jpg" alt="Esha Kamran" class="avatar">
+            <span>LinkedIn</span>
+        </a>
     </div>
-</div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Esha Kamran</h1>
+        <p class="subtitle">Engineering Student • Portfolio • Projects</p>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="projects">
+        <h2>Projects</h2>
+        <p>Selected engineering and design work.</p>
+
+        <div class="grid">
+
+            <a href="digital-scale.html" class="card">
+                <div class="card-title">Digital Scale</div>
+                <div class="card-tagline">Custom-built scale with electronic measurement and calibration.</div>
+            </a>
+
+            <a href="autonomous-vehicle.html" class="card">
+                <div class="card-title">Autonomous Vehicle</div>
+                <div class="card-tagline">Small-scale vehicle with basic sensing and navigation logic.</div>
+            </a>
+
+            <a href="duplo-toy-block.html" class="card">
+                <div class="card-title">Duplo Toy Block</div>
+                <div class="card-tagline">Modeled and analyzed toy block design and manufacturability.</div>
+            </a>
+
+            <a href="plastic-injection-cad.html" class="card">
+                <div class="card-title">Plastic Injection Molding CAD Drawings</div>
+                <div class="card-tagline">CAD work for plastic parts prepared for injection molding.</div>
+            </a>
+
+            <a href="idle-seat-automator.html" class="card">
+                <div class="card-title">IDLE Class Seat Automator</div>
+                <div class="card-tagline">Tool to automate seat assignments and reduce classroom friction.</div>
+            </a>
+
+            <a href="happy-referral.html" class="card">
+                <div class="card-title">Happy Referral</div>
+                <div class="card-tagline">Referral platform concept designed for small business owners.</div>
+            </a>
+
+            <a href="universal-toy.html" class="card">
+                <div class="card-title">Universal Design Toy</div>
+                <div class="card-tagline">Inclusive toy prototype built using universal design principles.</div>
+            </a>
+
+        </div>
+    </div>
 
 </body>
 </html>
