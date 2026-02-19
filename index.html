@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esha Kamran | Engineering Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0e0e0e;
+            color: white;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.7;
+        }
+
+        .projects {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 14px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: #242424;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Esha Kamran</h1>
+    <p>Engineering Student • Projects • Research</p>
+</div>
+
+<div class="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">Solar Pump System</div>
+        <div class="card">Wind Energy Startup Concept</div>
+        <div class="card">MATLAB Engineering Model</div>
+    </div>
+</div>
+
+</body>
+</html>
