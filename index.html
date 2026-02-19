@@ -45,50 +45,46 @@
             border: 1px solid #2b3b4f;
         }
 
-        /* HERO SECTION */
+        /* HERO SECTION — made compact so projects show without scrolling */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            padding: 40px 20px 10px 20px;
             text-align: center;
-            padding: 0 20px;
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin: 0;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.8;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         /* PROJECT SECTION */
         .projects {
-            padding: 80px 20px 60px 20px;
+            padding: 10px 20px 40px 20px;
             text-align: center;
         }
 
         .projects h2 {
-            font-size: 2.3rem;
-            margin-bottom: 10px;
+            font-size: 2rem;
+            margin-bottom: 6px;
         }
 
         .projects p {
             opacity: 0.75;
             margin-top: 0;
+            font-size: 0.95rem;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
+            gap: 18px;
             max-width: 1100px;
-            margin: 40px auto 0 auto;
+            margin: 24px auto 0 auto;
         }
 
         /* CLICKABLE CARDS */
@@ -100,27 +96,27 @@
 
         .card {
             background: #1a1a1a;
-            padding: 30px;
+            padding: 22px;
             border-radius: 14px;
             transition: 0.25s;
-            font-size: 1.05rem;
+            font-size: 1rem;
             text-align: left;
         }
 
         .card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-4px);
             background: #232323;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
 
         .card-title {
             font-weight: bold;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .card-tagline {
             opacity: 0.7;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
     </style>
 </head>
@@ -130,13 +126,12 @@
     <!-- TOP-RIGHT LINKEDIN + PHOTO -->
     <div class="top-right">
         <a href="https://linkedin.com/in/eshakamran" target="_blank" rel="noopener">
-            <!-- Replace profile.jpg with your actual photo file name if different -->
             <img src="profile.jpg" alt="Esha Kamran" class="avatar">
             <span>LinkedIn</span>
         </a>
     </div>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION (compact) -->
     <div class="hero">
         <h1>Esha Kamran</h1>
         <p class="subtitle">Engineering Student • Portfolio • Projects</p>
@@ -161,12 +156,12 @@
 
             <a href="duplo-toy-block.html" class="card">
                 <div class="card-title">Duplo Toy Block</div>
-                <div class="card-tagline">Modeled and analyzed toy block design and manufacturability.</div>
+                <div class="card-tagline">Toy block modeled and analyzed for manufacturability.</div>
             </a>
 
             <a href="plastic-injection-cad.html" class="card">
                 <div class="card-title">Plastic Injection Molding CAD Drawings</div>
-                <div class="card-tagline">CAD work for plastic parts prepared for injection molding.</div>
+                <div class="card-tagline">CAD work for plastic parts designed for injection molding.</div>
             </a>
 
             <a href="idle-seat-automator.html" class="card">
