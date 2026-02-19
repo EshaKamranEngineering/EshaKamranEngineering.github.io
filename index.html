@@ -45,7 +45,7 @@
             border: 1px solid #2b3b4f;
         }
 
-        /* HERO SECTION — made compact so projects show without scrolling */
+        /* HERO SECTION — compact */
         .hero {
             padding: 40px 20px 10px 20px;
             text-align: center;
@@ -96,22 +96,38 @@
 
         .card {
             background: #1a1a1a;
-            padding: 22px;
+            padding: 18px;
             border-radius: 14px;
-            transition: 0.25s;
+            transition: 0.2s ease-out;
             font-size: 1rem;
             text-align: left;
+            cursor: pointer;              /* 👈 makes clickable feel obvious */
+            border: 1px solid #1f1f1f;
         }
 
         .card:hover {
-            transform: translateY(-4px);
-            background: #232323;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-6px) scale(1.02); /* 👈 hover lift + scale */
+            background: #242424;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+            border-color: #4d7cff;       /* 👈 subtle accent border */
+        }
+
+        .card-img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         .card-title {
             font-weight: bold;
             margin-bottom: 4px;
+            transition: color 0.2s ease-out;
+        }
+
+        .card:hover .card-title {
+            color: #d0e0ff;              /* 👈 title color change on hover */
         }
 
         .card-tagline {
@@ -131,7 +147,7 @@
         </a>
     </div>
 
-    <!-- HERO SECTION (compact) -->
+    <!-- HERO SECTION -->
     <div class="hero">
         <h1>Esha Kamran</h1>
         <p class="subtitle">Engineering Student • Portfolio • Projects</p>
@@ -145,38 +161,59 @@
         <div class="grid">
 
             <a href="digital-scale.html" class="card">
+                <img src="digital-scale.jpg" alt="Digital Scale" class="card-img">
                 <div class="card-title">Digital Scale</div>
-                <div class="card-tagline">Custom-built scale with electronic measurement and calibration.</div>
+                <div class="card-tagline">
+                    Custom-built scale with electronic sensing and calibration.
+                </div>
             </a>
 
             <a href="autonomous-vehicle.html" class="card">
+                <img src="autonomous-vehicle.jpg" alt="Autonomous Vehicle" class="card-img">
                 <div class="card-title">Autonomous Vehicle</div>
-                <div class="card-tagline">Small-scale vehicle with basic sensing and navigation logic.</div>
+                <div class="card-tagline">
+                    Small vehicle with line-following and obstacle detection.
+                </div>
             </a>
 
             <a href="duplo-toy-block.html" class="card">
+                <img src="duplo-toy-block.jpg" alt="Duplo Toy Block" class="card-img">
                 <div class="card-title">Duplo Toy Block</div>
-                <div class="card-tagline">Toy block modeled and analyzed for manufacturability.</div>
+                <div class="card-tagline">
+                    CAD model and design-for-manufacturing analysis.
+                </div>
             </a>
 
             <a href="plastic-injection-cad.html" class="card">
+                <img src="plastic-injection-cad.jpg" alt="Plastic Injection CAD" class="card-img">
                 <div class="card-title">Plastic Injection Molding CAD Drawings</div>
-                <div class="card-tagline">CAD work for plastic parts designed for injection molding.</div>
+                <div class="card-tagline">
+                    CAD drawings prepared for injection molding processes.
+                </div>
             </a>
 
             <a href="idle-seat-automator.html" class="card">
+                <img src="idle-seat-automator.jpg" alt="IDLE Seat Automator" class="card-img">
                 <div class="card-title">IDLE Class Seat Automator</div>
-                <div class="card-tagline">Tool to automate seat assignments and reduce classroom friction.</div>
+                <div class="card-tagline">
+                    Script/tool to automate classroom seat assignments.
+                </div>
             </a>
 
             <a href="happy-referral.html" class="card">
+                <img src="happy-referral.jpg" alt="Happy Referral" class="card-img">
                 <div class="card-title">Happy Referral</div>
-                <div class="card-tagline">Referral platform concept designed for small business owners.</div>
+                <div class="card-tagline">
+                    Referral platform concept for small business owners.
+                </div>
             </a>
 
             <a href="universal-toy.html" class="card">
+                <img src="universal-toy.jpg" alt="Universal Design Toy" class="card-img">
                 <div class="card-title">Universal Design Toy</div>
-                <div class="card-tagline">Inclusive toy prototype built using universal design principles.</div>
+                <div class="card-tagline">
+                    Inclusive toy prototype using universal design principles.
+                </div>
             </a>
 
         </div>
