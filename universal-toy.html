@@ -23,7 +23,8 @@
       margin-bottom: 20px;
     }
 
-    .hero img {
+    /* HERO VIDEO */
+    .hero video {
       width: 100%;
       border-radius: 16px;
       margin-bottom: 30px;
@@ -47,6 +48,7 @@
     p {
       color: #bbb;
       line-height: 1.6;
+      font-size: 18px;
     }
 
   </style>
@@ -58,9 +60,11 @@
 
     <h1>Universal Design Toy</h1>
 
-    <!-- 🔥 HERO GIF -->
+    <!-- 🔥 HERO VIDEO (replaces GIF) -->
     <div class="hero">
-      <img src="toy-car.gif" alt="Toy Car Demo">
+      <video autoplay loop muted playsinline>
+        <source src="toy-car.mp4" type="video/mp4">
+      </video>
     </div>
 
     <!-- SHORT DESCRIPTION -->
@@ -73,14 +77,14 @@
 
     <!-- CAD + DESIGN -->
     <div class="section grid">
-      <img src="toy-car-render.jpg">
-      <img src="toy-car-drawing3.jpg">
+      <img src="toy-car-render.jpg" alt="CAD Model">
+      <img src="toy-car-drawing3.jpg" alt="Technical Drawing">
     </div>
 
     <!-- MORE DETAILS -->
     <div class="section grid">
-      <img src="toy-car-drawing2.png">
-      <img src="toy-car-drawing1.jpg">
+      <img src="toy-car-drawing2.png" alt="Top View">
+      <img src="toy-car-drawing1.jpg" alt="Side View">
     </div>
 
   </div>
