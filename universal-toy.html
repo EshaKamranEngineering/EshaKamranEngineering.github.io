@@ -23,6 +23,10 @@
       margin-bottom: 20px;
     }
 
+    h2 {
+      margin-bottom: 10px;
+    }
+
     .hero video {
       width: 100%;
       border-radius: 16px;
@@ -43,6 +47,7 @@
     .grid img {
       width: 100%;
       border-radius: 12px;
+      display: block;
     }
 
     p {
@@ -51,9 +56,8 @@
       font-size: 18px;
     }
 
-    /* PDF viewer */
     .pdf-container {
-      margin-top: 30px;
+      margin-top: 20px;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid #2a2a2a;
@@ -72,6 +76,14 @@
 
       iframe {
         height: 500px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
       }
     }
   </style>
@@ -98,20 +110,38 @@
       </p>
     </div>
 
-    <!-- IMAGES -->
+    <!-- FIRST IMAGE ROW -->
     <div class="section grid">
       <img src="toy-car-render.jpg">
       <img src="toy-car-drawing3.jpg">
     </div>
 
+    <!-- 🔥 TEXT SECTION (fills your gap) -->
+    <div class="section">
+      <h2>Design Focus</h2>
+
+      <p>
+        Designed for young users, this toy emphasizes simplicity, durability,
+        and ease of interaction. Large features and smooth geometry make the
+        toy easy to handle, while the modular structure allows parts to be
+        assembled and reconfigured without tools.
+      </p>
+
+      <p>
+        The design process included CAD modeling, dimensioned drawings, and
+        prototyping to ensure manufacturability and usability.
+      </p>
+    </div>
+
+    <!-- SECOND IMAGE ROW -->
     <div class="section grid">
       <img src="toy-car-drawing2.png">
       <img src="toy-car-drawing1.jpg">
     </div>
 
-    <!-- 🔥 EMBEDDED PDF -->
+    <!-- PDF -->
     <div class="section">
-      <h2 style="margin-bottom: 15px;">Full Report</h2>
+      <h2>Full Report</h2>
 
       <div class="pdf-container">
         <iframe src="Team4_SnapSpeedCar_FinalReport.pdf"></iframe>
