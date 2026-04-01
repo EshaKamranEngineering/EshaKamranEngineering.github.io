@@ -23,15 +23,15 @@
       margin-bottom: 20px;
     }
 
-    /* HERO VIDEO */
     .hero video {
       width: 100%;
       border-radius: 16px;
       margin-bottom: 30px;
+      display: block;
     }
 
     .section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .grid {
@@ -51,6 +51,29 @@
       font-size: 18px;
     }
 
+    /* PDF viewer */
+    .pdf-container {
+      margin-top: 30px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      iframe {
+        height: 500px;
+      }
+    }
   </style>
 </head>
 
@@ -60,14 +83,14 @@
 
     <h1>Universal Design Toy</h1>
 
-    <!-- 🔥 HERO VIDEO (replaces GIF) -->
+    <!-- VIDEO -->
     <div class="hero">
-      <video autoplay loop muted playsinline>
+      <video autoplay loop muted playsinline controls>
         <source src="toy-car.mp4" type="video/mp4">
       </video>
     </div>
 
-    <!-- SHORT DESCRIPTION -->
+    <!-- DESCRIPTION -->
     <div class="section">
       <p>
         A modular toy car designed for kids ages 3–9 with interchangeable parts,
@@ -75,16 +98,24 @@
       </p>
     </div>
 
-    <!-- CAD + DESIGN -->
+    <!-- IMAGES -->
     <div class="section grid">
-      <img src="toy-car-render.jpg" alt="CAD Model">
-      <img src="toy-car-drawing3.jpg" alt="Technical Drawing">
+      <img src="toy-car-render.jpg">
+      <img src="toy-car-drawing3.jpg">
     </div>
 
-    <!-- MORE DETAILS -->
     <div class="section grid">
-      <img src="toy-car-drawing2.png" alt="Top View">
-      <img src="toy-car-drawing1.jpg" alt="Side View">
+      <img src="toy-car-drawing2.png">
+      <img src="toy-car-drawing1.jpg">
+    </div>
+
+    <!-- 🔥 EMBEDDED PDF -->
+    <div class="section">
+      <h2 style="margin-bottom: 15px;">Full Report</h2>
+
+      <div class="pdf-container">
+        <iframe src="Team4_SnapSpeedCar_FinalReport.pdf"></iframe>
+      </div>
     </div>
 
   </div>
